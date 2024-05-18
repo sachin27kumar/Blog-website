@@ -1,0 +1,552 @@
+/* css properties set for all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* navigation section css */
+.toggle, #drop{
+  display: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding:  20px 70px;
+    background-color:#fff;
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: #a9c6d8;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: color; 
+    transition-duration: 0.6s;
+}
+nav ul a:hover {
+    color: #48bd04;
+}
+/* underline for nav bar elements css */
+nav ul li a{
+  position: relative;
+}
+nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #48bd04;
+  height: 1px;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+/* header image */
+.header-img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+/* Introduction section heading and paragraph css */
+h1{
+    text-align: center;
+    color: #48bd04;
+    letter-spacing: 3px;
+    font-size: 50px;
+    padding-top:30px;
+    padding-bottom: 10px;
+}
+header p{
+    text-align: center;
+    margin: 0 70px;
+    color: #87A4B6;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* box css for blogs */
+#get-start, #balanced-diet, #balanced-life{
+    border: 0px none #000000;
+    border-radius: 40px;
+    box-shadow: 10px 10px 54px 0px #000000a6;
+    margin: 40px 50px;
+    padding: 30px 50px 70px;
+}
+
+/* headings and subheading for blogs */
+h2{
+    color:#367437;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+section h3{
+    color: #5ea102;
+    font-size: 25px;
+}
+section p{
+  color: #87A4B6;
+  margin-left: 170px;
+}
+section h4{
+    color:#445544;
+}
+
+/* list and list items css */
+section li{
+    padding-bottom: 25px;
+}
+section li p{
+    margin: 0;
+}
+section ol{
+    list-style-image: url("Images/listicon.svg");
+    padding-left: 50px;
+}
+
+/* blog content and media css */
+.blog-content{
+    display:flex;
+}
+.blog-summery{
+    flex: 1;
+}
+.blog-media{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+.blog-media img,
+.blog-media video {
+    width: 60%; 
+    max-height: 40%; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.blog-media img:hover,
+.blog-media video:hover {
+    transform: scale(1.2);
+}
+/* hover effect added to paragraphs */
+#about p:hover, p:hover {
+    color: #485861;
+    cursor: pointer; 
+  }  
+
+/* about section css */
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.container {
+  max-width: 1300px;
+  margin: 0px auto 0px auto;
+  padding: 0px 40px;
+}
+.about-me {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-me-container {
+  position: relative;
+}
+.about-me-title {
+  color:#367437;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+.about-me-flex-container {
+  margin-top: -25px;
+  margin-left: 150px;
+  left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-me-image {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.back-div {
+  position: absolute;
+  bottom: 0;
+  z-index: -3;
+  background-color: #013747;
+  width: 80%;
+  height: 80%;
+}
+.black-image {
+  z-index: -2;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  height: 100%;
+}
+.black-image img {
+  height: 100%;
+}
+.main-image {
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+  left: 25%;
+  top: 5%;
+  box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
+  transition: all 0.2s ease-out;
+}
+.main-image:hover {
+  transform-origin: top center;
+  transform: scale(1.5);
+  border-radius: 25px;
+}
+.main-image img {
+  transform-origin: center center;
+  transform: scale(2);
+  object-fit: cover;
+  transition: all 0.2s ease-out;
+}
+.main-image img:hover {
+  transform: scale(1);
+}
+.name{
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.name span{
+  color: #48bd04;
+  font-size: 30px;
+}
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex: 0 0 40%;
+}
+.text {
+  color: #87A4B6;
+  font-weight: 600;
+  font-size: 18px;
+}
+.text:hover{
+  color: #485861;
+  cursor: pointer; 
+}
+
+/* contact section css */
+  
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.form-title{
+  color:#367437;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.description{
+  color: #87A4B6;
+  margin: auto;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.form-control{
+  padding: 30px 40px;
+  background-color: #cccfcc;
+  border-radius: 20px;
+  border:none;
+  margin-bottom: 20px;
+  max-width: 400px;
+  height: 20px;
+  width:380px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #3f3e3e;
+}
+.form-control::placeholder{
+  color: #aeb4b9;
+  font-weight: 300;
+  opacity: 1;
+}
+.contact-form .form-control:focus {
+  border: none;
+  box-shadow: 0 2px 2px #00000012, 0 0 8px #367437;
+  background-color: rgb(231, 229, 229);
+}
+.message{
+  height:auto;
+  resize: none;
+  width: 100%;
+}
+
+/* send button css */
+.submit-button{
+  text-align: center;
+}
+.submit-button input{
+  border: none;
+  border-radius: 10px;
+  background-color: #367437;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.submit-button input:hover{
+  background-color: #285828;
+}
+
+/* connect section css */
+.connect h2{
+  color:#367437;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  padding: 50px 0 30px;
+  text-align: center;
+
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+.social-media a{
+  display: flex;
+  background: #fff;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px #007cc426,
+              -6px -6px 10px -1px #ffffffb3;
+  border: 1px solid #007cc400;
+  transition: transform 0.5s
+}
+.social-media a i{
+  font-size: 25px;
+  color:#367437;
+  transition: transform 0.5s;
+}
+.social-media a:hover{
+  box-shadow:inset 4px 4px 6px -2px #00000033,
+              inset -4px -4px 6px -1px #ffffffb3,
+                    -0.5px -0.5px 0px -1px #ffffff,
+                    0.5px 0.5px 0px #00000026,
+                    0px 12px 10px -10px #0000000d;
+  border: 1px solid #007cc41a;
+  transform: translateY(2px);
+}
+.social-media a:hover i{
+  transform: scale(0.90);
+}
+.social-media a:hover .fa-facebook{
+  color: #3b5998;
+}
+.social-media a:hover .fa-linkedin{
+  color: #3b5998;
+}
+.social-media a:hover .fa-instagram{
+  color: #f05a38;
+}
+.social-media a:hover .fa-github{
+  color: black;
+}
+/* copyright section css */
+.footer{
+  text-align: center;
+  color: #87A4B6;
+  margin:40px auto 20px;
+}
+
+/* Media Queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+    /* For mobile devices */
+
+    .toggle + a, .menu{
+      display:none;
+      transition-property: display;
+    }
+    .toggle {
+      display: block;
+      background-color: #367437;
+      padding:14px 20px;	
+      color:white;
+      font-size:20px;
+      text-decoration:none;
+      border:none;
+    }
+    .toggle:hover {
+      background-color: #48bd04;
+    }
+    #drop:checked + ul {
+      display: block;
+    }
+    nav ul li {
+      display: block;
+      width: 80%;
+      }
+    .menu{
+      padding-left: 20px;
+    }  
+
+/* media queries for blog section */
+    h2{
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+  section h3{
+      font-size: 15px;
+      text-align: center;
+  }
+  section p{
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+  }
+  section li{
+    margin: auto;
+    text-align: center;
+  }
+  section ol{
+      list-style-image: none;
+      list-style-type: none;
+  }
+
+  /* media queries for blog content and media css */
+  .blog-summery ol{
+    padding-left: 0;
+  }
+  .blog-content{
+      flex-direction: column;
+  }
+  .blog-media img{
+      margin-bottom: 20px;
+  }
+  .blog-media img,
+  .blog-media video {
+      transition: none;
+  }
+  .blog-media img:hover,
+  .blog-media video:hover {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 930px){
+/* media queries for about me */
+.about-me-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.about-me-flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.about-me-image {
+  width: 120px;
+  height: 120px;
+}
+.name{
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.name span{
+  font-size: 20px;
+}
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 40%;
+}
+.text {
+  font-weight: 400;
+  font-size: 15px;
+  margin:20px 30px auto;
+  text-align: center;
+}
+
+/* media queries foor contact section */
+.form-title{
+  font-size: 30px;
+  margin-top: 15px;
+  padding: 20px 0 2px;
+
+}
+.description{
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.form-control{
+  padding: 20px 45px;
+  margin-bottom: 15px;
+  max-width: 300px;
+  font-size: 15px;
+  font-weight: 300;
+}
+/* send button css */
+.submit-button input{
+  padding: 10px 30px;
+  font-weight: 400;
+  font-size: 15px;
+}
+/* media queries for connect section */
+.connect h2{
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+.social-media a{
+  height: 30px;
+  width: 30px;
+  margin: 0 13px;
+}
+.social-media a i{
+  font-size: 20px;
+}
+
+/* copyright section css */
+.footer{
+  font-size: 10px;
+}
+}
+
+
+
+
+
